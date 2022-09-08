@@ -32,3 +32,14 @@
     justify-content: center;
     border: 1px solid black;
   }
+
+
+
+  .even{
+    background-color: yellowgreen;
+  }
+  
+  .odd{
+    background-color: brown;
+  }
+  

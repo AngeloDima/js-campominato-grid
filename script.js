@@ -69,5 +69,20 @@ function createCell(label){
     return cellElement;
 }
 
+function changeCellColor(cell, label){
+    // emette un messaggio in console con il numero della cella cliccata.
+    console.log('cella cliccata', label);
+    // la cella cliccata si colora di un colore se pari, di un altro colore se dispari
+    const isEven = isNumberEven(label);
 
+    if (isEven){
+        cell.classList.add('even');
+        //cellElement.className += ' even';
+    }else{
+        cell.classList.add('odd'); // this cambia perché uso function(){}
+    }
+
+}
+
+const isNumberEven = (number) => number % 2 === 0;
 
